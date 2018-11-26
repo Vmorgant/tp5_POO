@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Blog</title >
+<meta http-equiv ="Content-Type "content="text/html; charset=UTF-8" />
+<ul>
+    <li><a href="http://localhost:8080/article">Article</a></li>
+    <li><a href="http://localhost:8080/greeting">Greeting</a></li>
+</ul >
+</head>
+<body>
+<h1> Les differents articles </h1>
+<ul th:each ="article : ${allArticles}">
+<li th:text ="${article.title }" />
+</ul >
+</body >
+</html >
